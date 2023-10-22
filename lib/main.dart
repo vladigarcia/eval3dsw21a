@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'inicio.dart';
 import 'expansionpanel.dart';
 import 'snackbar.dart';
 
@@ -12,7 +11,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: MyHomePage(),
       routes: {
-        '/inicio': (context) => InicioPage(),
         '/expansionpanel': (context) => ExpansionPanelExample(),
         '/snackbar': (context) => Snackbar(),
       },
@@ -48,14 +46,6 @@ class MyDrawer extends StatelessWidget {
               backgroundColor: Colors.white,
               child: Icon(Icons.person),
             ),
-          ),
-          ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Inicio'),
-            onTap: () {
-              Navigator.of(context).pop(); // Cierra el menú
-              Navigator.of(context).pushNamed('/inicio');
-            },
           ),
           ListTile(
             leading: Icon(Icons.expand_less_sharp),
