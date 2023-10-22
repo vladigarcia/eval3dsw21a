@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 
 class Snackbar extends StatelessWidget {
-  // Esta función muestra el Snackbar
+
   void _mostrarSnackbar(BuildContext context) {
     final snackBar = SnackBar(
-      content: Text('Este es el mensaje de Snackbar: Hola Mundo'),
+      content: Text('No podemos evitar que los problemas nos encuentren, pero podemos elegir cómo los enfrentamos'),
       backgroundColor: Colors.blue, // Cambia el color de fondo del Snackbar
       action: SnackBarAction(
         label: 'Deshacer',
         onPressed: () {
-          // Acción a realizar cuando se pulsa el botón de "Deshacer"
-          // Puedes agregar tu lógica personalizada aquí.
+
         },
       ),
     );
